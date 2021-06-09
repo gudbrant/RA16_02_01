@@ -1,0 +1,41 @@
+.filters {
+  display: flex;
+  justify-content: flex-start;
+  margin: 10px 25.5%;
+}
+
+.filters div {
+  padding: 5px 15px;
+  border: 1px solid;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.filters .active {
+  color: #ffffff;
+  background-color: #8a8a8a;
+}
+
+.project-list {
+  display: flex;
+  width: 50%;
+  margin: 0 auto;
+  padding: 20px;
+  flex-flow: row wrap;
+  align-content: space-between;
+}
+
+.item {
+  display: inline-block;
+  width: 30.33%;
+  height: 100%;
+  padding: 10px;
+}
+
+.project-list::before,
+.project-list::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
